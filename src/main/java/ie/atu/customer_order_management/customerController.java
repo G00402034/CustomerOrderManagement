@@ -10,20 +10,17 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 
 @RestController
-public class orderController {
-
-    private orderService orderService;
-    private orderDetails orderDetails;
+public class customerController {
+    private customerService customerService;
+    private customerDetails customerDetails;
 
     @Autowired
-    public void Inject(orderService(orderService){this.orderService = orderService;}
+    public void Inject(customerService(customerService){this.customerService = customerService;}
 
-    @PostMapping("/addOrder")
+    @PostMapping("/addCustomer")
     @ResponseStatus(HttpStatus.CREATED)
-    public void addOrderReciever(@RequestBody orderDetails orderDetails){orderService.createOrder(orderDetails);}
-
-    @PostMapping("/getorder")
+    public void addOrderReciever(@RequestBody customerDetails customerDetails){customerService.createCustomer(customerDetails);}
+    @PostMapping("/getCustomer")
     @ResponseStatus(HttpStatus.CREATED)
-    public ArrayList <orderDetails> getOrderReciever(){return orderService.getOrderByid();}
-
+    public ArrayList<orderDetails> getCustomerReciever(){return customerService.getCustomerByID();}
 }

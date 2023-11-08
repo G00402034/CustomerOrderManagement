@@ -1,7 +1,9 @@
 package ie.atu.customer_order_management;
 
-import java.util.ArrayList;
+import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+@Service
 public class orderService {
     ArrayList<orderDetails> ordersSheet = new ArrayList<>();
     public void createOrder (orderDetails orderDetails){ordersSheet.add(orderDetails);}

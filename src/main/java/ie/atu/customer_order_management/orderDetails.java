@@ -12,6 +12,6 @@ public class orderDetails {
     private int orderID;
     private int productID;
     private int quantity;
-    private int customerID;
+    private String customerID;
 
 }
