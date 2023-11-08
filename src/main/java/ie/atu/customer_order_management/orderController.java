@@ -16,7 +16,7 @@ public class orderController {
     private orderDetails orderDetails;
 
     @Autowired
-    public void Inject(orderService(orderService)){this.orderService = orderService};
+    public void Inject(orderService(rderService){this.orderService = orderService;}
 
     @PostMapping("/addOrder")
     @ResponseStatus(HttpStatus.CREATED)
